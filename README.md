@@ -5,6 +5,8 @@ Please see the license for legal information and appropriate usage.
 Targeted at Java 1.7+
 
 ## Example Use
+
+### Creating a new SubtitleFile
 	SubtitleFile exampleSubtitleFile = new SubtitleFile();
 	
 	Subtitle exampleSubtitle = new Subtitle(new Timestamp(0, 0, 2, 832), new Timestamp("00:00:09,127"));
@@ -22,3 +24,6 @@ Targeted at Java 1.7+
 	exampleSubtitleFile.addSubtitle(exampleSubtitle2);
 	
 	exampleSubtitleFile.save(new File("example.srt"));
+
+### Opening an existing SubtitleFile
+	SubtitleFile exampleFile = new SubtitleFile(new File("test.srt"));

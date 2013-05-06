@@ -45,6 +45,10 @@ public class Subtitle {
 	public void removeLine(int index) {
 		lines.remove(index);
 	}
+	
+	public String getLine(int index) {
+		return lines.get(index);
+	}
 
 	public List<String> getLines() {
 		return lines;
