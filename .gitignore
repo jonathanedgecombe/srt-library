@@ -1,0 +1,7 @@
+.*
+*~
+/bin*
+*.ini
+*.iml
+!.git*
+!.mailmap
